@@ -31,8 +31,10 @@ class ToDoList extends React.Component {
             todo =>
               todo.task.includes(this.state.searchInput) && (
                 <ToDo
+                  
                   todo={todo}
                   toggleCompleted={this.props.toggleCompleted}
+                  key={this.props.todos.id}
                 />
               )
           )}

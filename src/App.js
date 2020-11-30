@@ -61,6 +61,7 @@ class App extends React.Component {
       <div>
         <h2>Welcome to your Todo App!</h2>
         <ToDoList
+        key={this.state.todos.id}
           todos={this.state.todos}
           toggleCompleted={this.toggleCompleted}
         />
