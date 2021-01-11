@@ -32,7 +32,7 @@ class ToDoForm extends React.Component {
             placeholder="new task..."
             onChange={this.handleInput}
           />
-          <button type="submit">+</button>
+          <button type="submit">Add Todo</button>
         </form>
         <button onClick={this.props.clearCompleted}>clear completed</button>
       </>
